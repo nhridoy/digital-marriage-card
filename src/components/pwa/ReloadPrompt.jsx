@@ -25,37 +25,10 @@ function ReloadPrompt() {
   };
 
   return (
-    <div className="ReloadPrompt-container animate__animated animate__bounceInUp">
-      <div className="ReloadPrompt-toast">
-        <div className="ReloadPrompt-message">
-          {offlineReady ? (
-            <span>App ready to work offline</span>
-          ) : (
-            <span>
-              New content available, click on reload button to update.
-            </span>
-          )}
-        </div>
-        <button
-          className="ReloadPrompt-toast-button"
-          type="button"
-          aria-label="Reload"
-          onClick={() => updateServiceWorker(true)}
-        >
-          <IoReloadOutline />
-        </button>
-        <button
-          className="ReloadPrompt-toast-button"
-          type="button"
-          aria-label="Close"
-          onClick={() => close()}
-        >
-          <CgClose />
-        </button>
-      </div>
-      {/* {(offlineReady || needRefresh) && (
-        <div className="ReloadPrompt-toast">
-          <div className="ReloadPrompt-message">
+    <div className="fixed bottom-0 left-0 w-full flex justify-center items-center animate__animated animate__bounceInUp">
+      {(offlineReady || needRefresh) && (
+        <div className="text-gray-800 bg-white flex items-center justify-between gap-2 px-4 py-4 mb-4 rounded-md shadow-md shadow-white/25">
+          <div className="font-medium">
             {offlineReady ? (
               <span>App ready to work offline</span>
             ) : (
@@ -66,17 +39,24 @@ function ReloadPrompt() {
           </div>
           {needRefresh && (
             <button
-              className="ReloadPrompt-toast-button"
+              className="bg-gray-200 hover:bg-gray-300 border-none focus:outline-none px-3 py-2 rounded-md"
+              type="button"
+              aria-label="Reload"
               onClick={() => updateServiceWorker(true)}
             >
               <IoReloadOutline />
             </button>
           )}
-          <button className="ReloadPrompt-toast-button" onClick={() => close()}>
-            <IoAddCircleOutline />
+          <button
+            className="bg-gray-200 hover:bg-gray-300 border-none focus:outline-none px-3 py-2 rounded-md"
+            type="button"
+            aria-label="Close"
+            onClick={() => close()}
+          >
+            <CgClose />
           </button>
         </div>
-      )} */}
+      )}
     </div>
   );
 }

@@ -60,7 +60,7 @@ function App() {
 
       {supportsPWA && (
         <button
-          className="fixed-btn animate__animated animate__backInRight"
+          className="fixed-btn z-10 animate__animated animate__backInRight"
           onClick={(e) => onClick(e)}
         >
           Install
