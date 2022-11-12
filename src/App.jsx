@@ -9,7 +9,6 @@ function App() {
   // let showInAppInstallPromotion = () => <ShowPrompt />;
   const [supportsPWA, setSupportsPWA] = useState(false);
   const [promptInstall, setPromptInstall] = useState(null);
-  const [buttonStyle, setButtonStyle] = useState({ right: 20, bottom: 20 });
 
   useEffect(() => {
     const handler = (e) => {
