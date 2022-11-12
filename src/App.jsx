@@ -37,12 +37,12 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+      <div className="flex gap-10 mb-5 justify-center">
+        <a className="" href="https://vitejs.dev" target="_blank">
+          <img src="/vite.svg" className="p-0 logo" alt="Vite logo" />
         </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a className="" href="https://reactjs.org" target="_blank">
+          <img src={reactLogo} className="p-0 logo react" alt="React logo" />
         </a>
       </div>
       <h1>Vite + React + PWA</h1>
