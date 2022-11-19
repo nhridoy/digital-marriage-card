@@ -72,11 +72,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-#installInstructions {
-  display: none;
-}
-@media (display-mode: browser) {
-  #installInstructions {
-    display: block;
-  }
-}

@@ -1,39 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import "animate.css";
 
 function App() {
   const [count, setCount] = useState(0);
-
-  // let showInAppInstallPromotion = () => <ShowPrompt />;
-  const [supportsPWA, setSupportsPWA] = useState(false);
-  const [promptInstall, setPromptInstall] = useState(null);
-
-  useEffect(() => {
-    const handler = (e) => {
-      e.preventDefault();
-      setSupportsPWA(true);
-      setPromptInstall(e);
-    };
-    if (
-      !window.navigator.standalone === true ||
-      !window.matchMedia("(display-mode: standalone)").matches
-    ) {
-      window.addEventListener("beforeinstallprompt", handler);
-    }
-
-    return () => window.removeEventListener("transitionend", handler);
-  }, []);
-
-  const onClick = (e) => {
-    e.preventDefault();
-    if (promptInstall) {
-      promptInstall.prompt();
-    } else {
-      return;
-    }
-  };
 
   return (
     <div className="App">
@@ -58,21 +29,6 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <button
-        id="installInstructions"
-        className="fixed-btn z-10 animate__animated animate__backInRight"
-        onClick={(e) => onClick(e)}
-      >
-        Install
-      </button>
-      {/* {supportsPWA && (
-        <button
-          className="fixed-btn z-10 animate__animated animate__backInRight"
-          onClick={(e) => onClick(e)}
-        >
-          Install
-        </button>
-      )} */}
     </div>
   );
 }

@@ -25,7 +25,7 @@ function ReloadPrompt() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 w-full flex justify-center items-center animate__animated animate__bounceInUp">
+    <div className="fixed z-20 bottom-0 left-0 w-full flex justify-center items-center animate__animated animate__bounceInUp">
       {(offlineReady || needRefresh) && (
         <div className="text-gray-800 bg-white flex items-center justify-between gap-2 px-4 py-4 mb-4 rounded-md shadow-md shadow-white/25">
           <div className="font-medium">
