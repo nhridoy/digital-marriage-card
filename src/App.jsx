@@ -46,6 +46,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React + PWA</h1>
+      <h6>By Hridoy</h6>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -57,15 +58,21 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-
-      {supportsPWA && (
+      <button
+        id="installInstructions"
+        className="fixed-btn z-10 animate__animated animate__backInRight"
+        onClick={(e) => onClick(e)}
+      >
+        Install
+      </button>
+      {/* {supportsPWA && (
         <button
           className="fixed-btn z-10 animate__animated animate__backInRight"
           onClick={(e) => onClick(e)}
         >
           Install
         </button>
-      )}
+      )} */}
     </div>
   );
 }
