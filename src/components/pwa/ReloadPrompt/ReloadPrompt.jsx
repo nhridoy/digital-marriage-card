@@ -27,7 +27,7 @@ function ReloadPrompt() {
   return (
     <>
       {(offlineReady || needRefresh) && (
-        <div className="fixed z-20 bottom-0 left-0 right-0 max-w-xl mx-auto text-center text-gray-800 bg-white flex justify-center items-center gap-2 px-4 py-3 mb-4 rounded-md shadow-md shadow-white/25 animate__animated animate__bounceInUp">
+        <div className="fixed z-20 bottom-0 left-0 right-0 max-w-fit mx-auto text-center text-gray-800 bg-white flex justify-center items-center gap-2 px-4 py-3 mb-4 rounded-md shadow-md shadow-white/25 animate__animated animate__bounceInUp">
           <div className="font-medium">
             {offlineReady ? (
               <span>App ready to work offline</span>
