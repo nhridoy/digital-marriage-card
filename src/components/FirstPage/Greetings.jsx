@@ -1,11 +1,13 @@
 import React from "react";
 import bride from "../../assets/SVG/bride.svg";
 import groom from "../../assets/SVG/groom.svg";
+import Message from "./Message";
 
-const Greetings = () => {
+const Greetings = ({ name }) => {
   return (
     <div className="flex flex-col justify-between h-screen">
       <div className="mt-2 text-6xl text-pink-700 font-dancing">Greetings</div>
+      <Message name={name} />
       <div className="flex justify-between px-4 mb-2">
         <div className="relative">
           <img
@@ -14,7 +16,7 @@ const Greetings = () => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute top-0 p-2 bg-white rounded-md -right-28">
-            Pull me to you...
+            Hello There
             <div
               className="absolute left-0 w-0 h-0 
   border-t-[10px] border-t-transparent
@@ -30,7 +32,7 @@ const Greetings = () => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute top-0 p-2 bg-white rounded-md -left-28">
-            Come Closer...
+            Let's Get Married
             <div
               className="absolute right-0 w-0 h-0 
   border-t-[10px] border-t-transparent

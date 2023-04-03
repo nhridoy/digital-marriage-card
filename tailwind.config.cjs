@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         dancing: ["Dancing Script"],
+        bangla: ["Mukti"],
       },
     },
   },

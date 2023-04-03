@@ -54,7 +54,7 @@ function App() {
         </div>
       ) : pageNum === 1 ? (
         <div className={pageNum === 1 && "animate__animated animate__fadeInUp"}>
-          <Greetings />
+          <Greetings name={name} />
         </div>
       ) : null}
     </div>

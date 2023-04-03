@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.maateen.me/mukti/font.css");
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -24,7 +25,7 @@ a:hover {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Mukti, sans-serif;
   margin: 0;
   display: flex;
   place-items: center;
