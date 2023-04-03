@@ -2,12 +2,14 @@ import React from "react";
 import bride from "../../assets/SVG/bride.svg";
 import groom from "../../assets/SVG/groom.svg";
 import Message from "./Message";
-
+import Times from "./Times";
 const Greetings = ({ name }) => {
   return (
     <div className="flex flex-col justify-between h-screen">
       <div className="mt-2 text-6xl text-pink-700 font-dancing">Greetings</div>
       <Message name={name} />
+      <Times />
+
       <div className="flex justify-between px-4 mb-2">
         <div className="relative">
           <img
@@ -15,7 +17,7 @@ const Greetings = ({ name }) => {
             alt="Bride"
             className="w-24 transform -scale-x-100 md:w-44"
           />
-          <div className="absolute top-0 p-2 bg-white rounded-md -right-28">
+          <div className="absolute -top-12 p-2 bg-white rounded-md -right-28">
             Hello There
             <div
               className="absolute left-0 w-0 h-0 
