@@ -7,6 +7,9 @@ module.exports = {
         dancing: ["Dancing Script"],
         bangla: ["Mukti"],
       },
+      backgroundImage: {
+        bg: "url('/assets/bg.jpg')",
+      },
     },
   },
   plugins: [],

@@ -6,11 +6,15 @@ import Times from "./Times";
 const Greetings = ({ name }) => {
   return (
     <div className="flex flex-col justify-between h-screen">
-      <div className="mt-2 text-6xl text-pink-700 font-dancing">Greetings</div>
-      <Message name={name} />
-      <Times />
+      <div className="">
+        <div className="mt-2 text-6xl text-pink-700 font-dancing">
+          Greetings
+        </div>
+        <Message name={name} />
+        <Times />
+      </div>
 
-      <div className="flex justify-between px-4 mb-2">
+      <div className="flex absolute w-full bottom-0 justify-between px-4 mb-2">
         <div className="relative">
           <img
             src={bride}
@@ -18,7 +22,7 @@ const Greetings = ({ name }) => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute -top-12 p-2 bg-white rounded-md -right-28">
-            Hello There
+            Hello Hridoy
             <div
               className="absolute left-0 w-0 h-0 
   border-t-[10px] border-t-transparent
@@ -34,7 +38,7 @@ const Greetings = ({ name }) => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute top-0 p-2 bg-white rounded-md -left-28">
-            Let's Get Married
+            Hello Muna
             <div
               className="absolute right-0 w-0 h-0 
   border-t-[10px] border-t-transparent
