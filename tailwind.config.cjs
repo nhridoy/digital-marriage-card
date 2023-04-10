@@ -8,7 +8,8 @@ module.exports = {
         bangla: ["Mukti"],
       },
       backgroundImage: {
-        bg: "url('/assets/bg.jpg')",
+        desktop: "url('/assets/desktop.webp')",
+        mobile: "url('/assets/mobile.webp')",
       },
     },
   },

@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const Message = ({ name }) => {
   return (
-    <div className="font-bangla md:text-xl bg-pink-500 md:w-1/2 mx-auto p-2 mt-4">
+    <div className="font-bangla md:text-xl bg-pink-500/30 md:w-1/2 mx-auto p-2 mt-4">
       <Typewriter
         options={{
           strings: [
@@ -24,7 +24,7 @@ const Message = ({ name }) => {
           <br />`,
           ],
           autoStart: true,
-          loop: true,
+          loop: false,
         }}
       />
     </div>

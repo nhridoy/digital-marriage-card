@@ -65,7 +65,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col justify-between w-screen h-screen bg-bg bg-contain bg-center to-pink-200 from-pink-300">
+    <div className="flex flex-col justify-between w-screen h-screen bg-mobile md:bg-desktop bg-cover bg-no-repeat bg-center to-pink-200 from-pink-300">
       {/* <embed
         src="/assets/Soft Romantic.mp3"
         loop="true"

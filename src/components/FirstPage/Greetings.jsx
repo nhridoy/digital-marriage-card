@@ -21,12 +21,12 @@ const Greetings = ({ name }) => {
             alt="Bride"
             className="w-24 transform -scale-x-100 md:w-44"
           />
-          <div className="absolute -top-12 p-2 bg-white rounded-md -right-28">
+          <div className="absolute -top-12 p-2 bg-pink-400 rounded-md -right-28">
             Hello Hridoy
             <div
               className="absolute left-0 w-0 h-0 
   border-t-[10px] border-t-transparent
-  border-r-[25px] border-r-white
+  border-r-[25px] border-r-pink-400
   border-b-[10px] border-b-transparent -rotate-[32deg] -translate-x-3 -translate-y-1"
             ></div>
           </div>
@@ -37,12 +37,12 @@ const Greetings = ({ name }) => {
             alt="Groom"
             className="w-24 transform -scale-x-100 md:w-44"
           />
-          <div className="absolute top-0 p-2 bg-white rounded-md -left-28">
+          <div className="absolute top-0 p-2 bg-pink-400 rounded-md -left-28">
             Hello Muna
             <div
               className="absolute right-0 w-0 h-0 
   border-t-[10px] border-t-transparent
-  border-r-[25px] border-r-white
+  border-r-[25px] border-r-pink-400
   border-b-[10px] border-b-transparent rotate-[212deg] translate-x-3 -translate-y-1"
             ></div>
           </div>
