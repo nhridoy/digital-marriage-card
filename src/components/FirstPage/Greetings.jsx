@@ -12,7 +12,7 @@ const Greetings = ({ name }) => {
           Greetings
         </div>
         <Message name={name} />
-        <div className="absolute z-10 top-3/4 md:top-2/3 -translate-y-56 md:-translate-y-28  w-full">
+        <div className="absolute z-10 top-3/4 md:top-2/3 -translate-y-[12.5rem] md:-translate-y-20  w-full">
           <Times />
           <Map />
         </div>
@@ -26,7 +26,7 @@ const Greetings = ({ name }) => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute -top-12 p-2 bg-pink-400 rounded-md -right-28">
-            Hello Hridoy
+            Hello Hridoy 💖
             <div
               className="absolute left-0 w-0 h-0 
   border-t-[10px] border-t-transparent
@@ -42,7 +42,7 @@ const Greetings = ({ name }) => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute top-0 p-2 bg-pink-400 rounded-md -left-28">
-            Hello Muna
+            Hello Muna 💖
             <div
               className="absolute right-0 w-0 h-0 
   border-t-[10px] border-t-transparent

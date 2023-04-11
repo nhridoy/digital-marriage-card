@@ -17,7 +17,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     // Render a countdown
     return (
       <span>
-        <p className="font-bangla text-2xl md:text-4xl">বাকি আছে সময়</p>
+        <p className="font-ekusheySaraswatii text-3xl md:text-4xl">সময় বাকি</p>
         {days} দিন {hours} ঘণ্টা {minutes} মিনিট {seconds} সেকেন্ড
       </span>
     );

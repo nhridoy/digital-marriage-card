@@ -3,7 +3,7 @@ import React from "react";
 const NameInput = ({ name, setName, error, handleSubmit, setError }) => {
   return (
     <div className="flex flex-col items-center justify-center w-1/2 h-screen gap-2 mx-auto font-dancing">
-      <p className="text-2xl md:text-6xl font-bold font-sans">
+      <p className="text-2xl md:text-6xl font-bold font-dancing text-pink-600">
         Enter Your Name
       </p>
       <input

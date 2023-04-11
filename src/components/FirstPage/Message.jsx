@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const Message = ({ name }) => {
   return (
-    <div className="font-bangla md:text-xl bg-pink-500/30 md:w-1/2 mx-auto p-2 mt-4">
+    <div className="font-ekusheySaraswatii text-xl md:text-2xl bg-pink-500/30 md:w-1/2 mx-auto p-2 mt-4">
       <Typewriter
         options={{
           strings: [
