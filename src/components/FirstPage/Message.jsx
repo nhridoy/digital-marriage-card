@@ -7,8 +7,8 @@ const Message = ({ name }) => {
       <Typewriter
         options={{
           strings: [
-            `প্রীয় ${name}, <br />
-          সাদিয়ার সহিত জড়িয়ে পড়ছি আমি বিয়ের গ্রন্থিতে।
+            `প্রিয় <span class="font-dancing">${name}</span>, <br />
+          সাদিয়া রহমান মুন এর সহিত জড়িয়ে পড়ছি আমি বিয়ের গ্রন্থিতে।
           <br />
           আসছে ২৮ই এপ্রিল শুক্রবার বর্ষামেদুর উত্তর-সন্ধ্যায়।
           <br />
@@ -20,11 +20,10 @@ const Message = ({ name }) => {
           <br />
           ইতি,
           <br />
-          নাহিদুজ্জামান
-          <br />`,
+          নাহিদুজ্জামান হৃদয়`,
           ],
           autoStart: true,
-          loop: false,
+          loop: true,
         }}
       />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import bride from "../../assets/SVG/bride.svg";
 import groom from "../../assets/SVG/groom.svg";
+import Map from "./Map";
 import Message from "./Message";
 import Times from "./Times";
 const Greetings = ({ name }) => {
@@ -11,7 +12,10 @@ const Greetings = ({ name }) => {
           Greetings
         </div>
         <Message name={name} />
-        <Times />
+        <div className="absolute z-10 top-3/4 md:top-2/3 -translate-y-56 md:-translate-y-28  w-full">
+          <Times />
+          <Map />
+        </div>
       </div>
 
       <div className="flex absolute w-full bottom-0 justify-between px-4 mb-2">

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import "animate.css";
+// import useWindowSize from "react-use/lib/useWindowSize";
+import Confetti from "react-confetti";
 import Greetings from "./components/FirstPage/Greetings";
 import NameInput from "./components/FirstPage/NameInput";
 
@@ -66,13 +68,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-between w-screen h-screen bg-mobile md:bg-desktop bg-cover bg-no-repeat bg-center to-pink-200 from-pink-300">
-      {/* <embed
-        src="/assets/Soft Romantic.mp3"
-        loop="true"
-        autostart="true"
-        width="2"
-        height="0"
-      ></embed> */}
+      <Confetti numberOfPieces={pageNum ? 50 : 0} />
       <div className={`relative ${playing && "hidden"}`}>
         <button
           onClick={handlePlayButtonClick}

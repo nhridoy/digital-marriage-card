@@ -2,7 +2,11 @@ import React from "react";
 import Countdown from "react-countdown";
 
 // Random component
-const Completionist = () => <span>You are good to go!</span>;
+const Completionist = () => (
+  <span className="font-bangla text-2xl md:text-4xl">
+    বিবাহিত জীবনের জন্য প্রার্থনা কাম্য!
+  </span>
+);
 
 // Renderer callback with condition
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -13,6 +17,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     // Render a countdown
     return (
       <span>
+        <p className="font-bangla text-2xl md:text-4xl">বাকি আছে সময়</p>
         {days} দিন {hours} ঘণ্টা {minutes} মিনিট {seconds} সেকেন্ড
       </span>
     );

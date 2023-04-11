@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         dancing: ["Dancing Script"],
-        bangla: ["Mukti"],
+        bangla: ["Usha"],
       },
       backgroundImage: {
         desktop: "url('/assets/desktop.webp')",
