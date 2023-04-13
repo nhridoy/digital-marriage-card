@@ -25,7 +25,7 @@ const Greetings = ({ name }) => {
             alt="Bride"
             className="w-24 transform -scale-x-100 md:w-44"
           />
-          <div className="absolute -top-12 p-2 bg-pink-400 rounded-md -right-28">
+          <div className="absolute -top-12 p-2 bg-pink-400 rounded-md -right-36 md:-right-28">
             Assalamualaikum
             <div
               className="absolute left-0 w-0 h-0 
@@ -41,7 +41,7 @@ const Greetings = ({ name }) => {
             alt="Groom"
             className="w-24 transform -scale-x-100 md:w-44"
           />
-          <div className="absolute top-0 p-2 bg-pink-400 rounded-md -left-28">
+          <div className="absolute top-0 p-2 bg-pink-400 rounded-md -left-36 md:-left-28">
             ওয়ালাইকুম আসসালাম
             <div
               className="absolute right-0 w-0 h-0 
