@@ -68,7 +68,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-between w-screen h-screen bg-mobile md:bg-desktop bg-cover bg-no-repeat bg-center to-pink-200 from-pink-300">
-      <Confetti numberOfPieces={pageNum ? 50 : 0} />
+      <Confetti numberOfPieces={pageNum ? 40 : 0} gravity={0.05} />
       <div className={`relative z-20 ${playing && "hidden"}`}>
         <button
           onClick={handlePlayButtonClick}

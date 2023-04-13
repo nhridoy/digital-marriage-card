@@ -24,6 +24,7 @@ const Message = ({ name }) => {
           ],
           autoStart: true,
           loop: true,
+          delay: 100,
         }}
       />
     </div>
