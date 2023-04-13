@@ -26,7 +26,7 @@ const Greetings = ({ name }) => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute -top-12 p-2 bg-pink-400 rounded-md -right-28">
-            Hello Hridoy 💖
+            Assalamualaikum
             <div
               className="absolute left-0 w-0 h-0 
   border-t-[10px] border-t-transparent
@@ -42,7 +42,7 @@ const Greetings = ({ name }) => {
             className="w-24 transform -scale-x-100 md:w-44"
           />
           <div className="absolute top-0 p-2 bg-pink-400 rounded-md -left-28">
-            Hello Muna 💖
+            ওয়ালাইকুম আসসালাম
             <div
               className="absolute right-0 w-0 h-0 
   border-t-[10px] border-t-transparent
